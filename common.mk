@@ -161,12 +161,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
-    vendor.display.config@2.0.vendor
-#    AdvancedDisplay
+    vendor.display.config@2.0.vendor \
+    AdvancedDisplay
 
 # Doze
-#PRODUCT_PACKAGES += \
-#    SamsungDoze
+PRODUCT_PACKAGES += \
+    SamsungDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -179,16 +179,16 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # FastCharge
-#PRODUCT_PACKAGES += \
-#    vendor.lineage.fastcharge@1.0-service.samsung
+PRODUCT_PACKAGES += \
+    vendor.lineage.fastcharge@1.0-service.samsung
 
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
 # Fingerprint
-#PRODUCT_PACKAGES += \
-#    android.hardware.biometrics.fingerprint@2.3-service.samsung
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.3-service.samsung
 
 # FlipFlap
 PRODUCT_PACKAGES += \
@@ -225,7 +225,7 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-#    android.hardware.keymaster@4.0-service.samsung \
+    android.hardware.keymaster@4.0-service.samsung \
     libkeymaster4_1support.vendor
 
 # LiveDisplay
@@ -341,7 +341,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-#    android.hardware.power-service.samsung-libperfmgr \
+    android.hardware.power-service.samsung-libperfmgr \
     android.hardware.power@1.2.vendor
 
 PRODUCT_COPY_FILES += \
@@ -362,12 +362,12 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     libxml2 \
     librilutils \
-    librmnetctl
-#    secril_config_svc
+    librmnetctl \
+    secril_config_svc
 
 # Sensors
 PRODUCT_PACKAGES += \
-#    android.hardware.sensors-service.samsung-multihal \
+    android.hardware.sensors-service.samsung-multihal \
     android.hardware.sensors@2.0-ScopedWakelock.vendor
 
 # Thermal
@@ -396,8 +396,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/usb/etc
 
 # Vibrator
-#PRODUCT_PACKAGES += \
-#    android.hardware.vibrator-service.samsung
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.samsung
 
 # Tether
 PRODUCT_PACKAGES += \
@@ -409,7 +409,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-#    android.hardware.wifi@1.0-service \
+    android.hardware.wifi@1.0-service \
     hostapd \
     libwifi-hal \
     libwifi-hal-qcom \
